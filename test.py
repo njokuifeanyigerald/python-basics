@@ -159,7 +159,111 @@ world = "world".upper()
 
 
 #COMPREHENSION
-x= [x+ 6  for x in range(5)]
-print(x)
+# x= [x+ 6  for x in range(5)]
+# print(x)
+
+# x = [[0  for x in range(100)] for x in range(5)]
+# x = [i  for i in range(100) if i % 5 == 0]
+# x ={i:0  for i in range(100) if i % 5 == 0}
+# x = tuple(i  for i in range(100) if i % 5 == 0)
+# print(x)
 
 
+# FUCNTION
+# def func():
+    # print('go')
+    # def gogo():
+    #     print('trump don go')
+    # gogo()
+
+# func()
+
+# def func(x,y, z=None):
+#     print('no sleeping', x,y, z)
+#     return x * y, x /y
+
+
+# print(func(2,43,32))  # it wont call 32
+# d1,d2 = func(2,43)
+# print(d1,d2)
+
+
+# def dam(x):
+#     def dam2():
+#         print(x)
+#     return dam2
+
+# # print(dam(3))
+# x= dam(232)
+# x()
+
+
+# UNPACK OPERATORS IN PYTHON
+
+# def func(*args, **kwargs):
+#     pass
+
+
+# x = [1,23,343,3434]
+# print(*x)
+# print(x)
+
+
+# def func(x,y):
+#     print(x,y)
+
+# pairs = [(1,2), (3,4)]
+# for pair in pairs:
+#     # func(*pair)
+#     func(**{'x': 2, 'y':23})
+
+
+# def func(*args, **kwargs):
+    # print(*args)
+    # print(**kwargs) # wont work 
+
+# func(1,2,43,332, one=0, two=12)
+
+
+# g = 'gerald'
+# def func(name):
+#     # global g
+#     g= name
+#     # the g variable is scope is within the function
+
+# print(g)
+# func('changed') # it wont change the value
+# # bacause g aint a global varible
+# print(g)
+
+# EXCEPTION
+# raise Exception('bad')
+# raise FileExistsError('already there')
+
+# try:
+#     x = 7/0
+# except Exception as e:
+#     print(e)
+
+# #finally block will run no matter what
+# finally:
+#     print('finally')
+
+#LAMBDA IS A ONE LINE ANNOYMOUS FUNCTION
+# x = lambda x: x+767
+# print(x(2))
+
+# x = lambda x, y: x+y
+# print(x(2,23))
+
+
+# filter and list
+# x = [12,12,234,4545,54,7876,977]
+# # mp = map(lambda  i : i+ 2, x)
+# mp = filter(lambda  i : i% 2 ==0, x)
+# print(list(mp))
+
+# F STRING only in python 3.6
+# name = 'gerald'
+# x  = f'hello {6+8} {name} {67+9}'
+# print(x)
